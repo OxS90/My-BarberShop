@@ -1,0 +1,63 @@
+:root {
+	--link-color: #fff;
+	--text-font-family: "Open Sans", sans-serif;
+	--heading-font-family: "Raleway", sans-serif;
+	--heading-color: #fff;
+	--link-active-color: #ff6c00;
+	--dash-color: #303030;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+	font-family: var(--heading-font-family);
+}
+ul {
+	list-style-type: none;
+}
+.global-header .main-navigation {
+	background-color: #363636;
+}
+.global-header .main-navigation a,
+.global-header .main-navigation a:visited,
+.button {
+	color: var(--link-color);
+	font-size: 12px;
+	font-family: var(--text-font-family);
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 1.2px;
+}
+.button {
+	letter-spacing: 1.08px;
+	text-transform: uppercase;
+	background-color: transparent;
+}
+/* am facut altfel, culoarea portocalie o avem si la about, care tot link este, respectiv am dat clasa active si la linkul de instagram */
+.global-header .left-section a {
+	color: var(--dash-color);
+	font-size: 11px;
+	font-family: Open Sans;
+	font-weight: 600;
+	line-height: 16px;
+	letter-spacing: 2.2px;
+}
+/* aici am 2 line spacing, banuiesc ca se aplica ultima, deci e ok sa declaram toate variabilele sus, si doar ce e diferit mai jos */
+.global-header a.active {
+	color: var(--link-active-color);
+}
+.hero-section{
+    background-color: #363636;
+    color: var(--heading-color);
+}
+.hero-heading {
+	font-size: 72px;
+	font-family: Raleway;
+	font-weight: 700;
+	line-height: 16px;
+	letter-spacing: 3.6px;
+}
+

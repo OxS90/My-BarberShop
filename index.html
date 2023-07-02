@@ -1,257 +1,330 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop</title>
-  </head>
-  <body>
-    <header>
-      <a href="index.html">
-        <!--De adaugat valori dimensiuni pentru imagini-->
-        <img src="images/logo.svg" alt="Barbershop logo" >
-      </a>
-      <nav>
-        <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="servicesandprices.html">Services and Prices</a></li>
-          <li><a href="barbers.html">Barbers</a></li>
-          <li><a href="contacts.html">Contacts</a></li>
-        </ul>
-      </nav>
-      <a href="tel:+380441111111">+38 044 111 11 11</a>
-      <!--De ce aici este sub forma de link si mai jos este sub forma de buton in alte 2 locuri?-->
-      <a
-        href="https://www.google.ro/?gws_rd=cr&ei=NIPeV43EN6yR6ATuo6zACQ"
-        target="_blank"
-        rel="noopener noreferrer nofollow"
-      >
-        Book a Service
-      </a>
-      <div><a
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          >Youtube</a
-        >
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          >Instagram</a
-        >
-        <img src="images/dash_navigation_links.png" alt="link separator"></div>
-    </header>
-    <main>
-      <section>
-        <hr>
-        <span> A hair salon for men in Kyiv </span>
-        <h1 title="BarberShop">BarberShop</h1>
-        <p>
-          We are experts in trendy men&apos;s haircuts. We work quickly,
-          carefully, and tastefully.
-        </p>
-        <!--Trebuie de adaugat Back si Next-->
-      </section>
-      <section>
-        <img
-          src="images/barber-img-1.png"
-          alt="Frizer taie cu masina de tuns">
-        <img src="images/barber-img-2.png" alt="Frizer taie cu lama">
-        <span><img src="images/dash_about.png" alt="dash">About</span>
-        <h2>The Best Barbershop in Your City</h2>
-        <h3>
-          If you want to add more confidence to your image, you are definitely
-          in the right place.
-        </h3>
-        <p>
-          We are a team that never rests on its laurels and yearns for change.
-          And once you fall into the hands of our master, you will never be the
-          same again. We are a team that is always on the same wavelength with
-          clients. Therefore, we are always ready to improve everyone who comes
-          to us!
-        </p>
-        <button>Book a service</button>
-      </section>
-      <section>
-        <span
-          ><img src="images/dash_about.png" alt="dash">Spend time in the
-          company of the best craftsmen</span
-        >
-        <h2>Services and Prices</h2>
-        <ul>
-          <li>
-            <span>Men's Haircut</span>
-            <span>from 300 UAH </span>
-          </li>
-          <li>
-            <span>Beard Trim</span>
-            <span>from 200 UAH</span>
-          </li>
-          <li>
-            <span>Mustache Trim</span>
-            <span>from 200 UAH</span>
-          </li>
-          <li>
-            <span>Straight Razor Shave</span>
-            <span>from 200 UAH</span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <span>Trainee Haircut </span>
-            <span>from 50 UAH </span>
-          </li>
-          <li>
-            <span>Buzz Cut</span>
-            <span>from 200 UAH </span>
-          </li>
-          <li>
-            <span>Kids Haircut (&lsaquo;12 y.o.)</span>
-            <span>from 300 UAH </span>
-          </li>
-          <li>
-            <span>Gray Coverage</span>
-            <span>from 200 UAH </span>
-          </li>
-        </ul>
-        <button>Book a Service</button>
-      </section>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Barbershop</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="css/styles.css" />
+	</head>
+	<body>
+		<header class="global-header">
+			<section class="left-section">
+				<a href="index.html">
+					<!--De adaugat valori dimensiuni pentru imagini-->
+					<img src="images/logo.svg" alt="Barbershop logo" />
+				</a>
+				<div>
+					<a
+						href="https://www.youtube.com/"
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						>Youtube</a
+					>
+					<a
+						href="https://www.instagram.com/"
+						target="_blank"
+						rel="noopener noreferrer nofollow"
+						class="active"
+						>Instagram</a
+					>
+					<img src="images/dash_navigation_links.png" alt="link separator" />
+				</div>
+			</section>
+			<nav class="main-navigation">
+				<ul>
+					<li><a href="about.html" class="active">About</a></li>
+					<li><a href="servicesandprices.html">Services and Prices</a></li>
+					<li><a href="barbers.html">Barbers</a></li>
+					<li><a href="contacts.html">Contacts</a></li>
+				</ul>
+        <a href="tel:+380441111111">+38 044 111 11 11</a>
+			<button class="button">Book a Service</button>
+			</nav>
+		</header>
+		<main>
+			<section class="hero-section">
+				<hr />
+				<span> A hair salon for men in Kyiv </span>
+				<h1 title="BarberShop" class="hero-heading">BarberShop</h1>
+				<p>
+					We are experts in trendy men&apos;s haircuts. We work quickly,
+					carefully, and tastefully.
+				</p>
+				<!--Trebuie de adaugat Back si Next-->
+			</section>
+			<section>
+				<img
+					src="images/barber-img-1.png"
+					alt="Frizer taie cu masina de tuns"
+				/>
+				<img src="images/barber-img-2.png" alt="Frizer taie cu lama" />
+				<span><img src="images/dash_about.png" alt="dash" />About</span>
+				<h2>The Best Barbershop in Your City</h2>
+				<h3>
+					If you want to add more confidence to your image, you are definitely
+					in the right place.
+				</h3>
+				<p>
+					We are a team that never rests on its laurels and yearns for change.
+					And once you fall into the hands of our master, you will never be the
+					same again. We are a team that is always on the same wavelength with
+					clients. Therefore, we are always ready to improve everyone who comes
+					to us!
+				</p>
+				<button>Book a service</button>
+			</section>
+			<section>
+				<span
+					><img src="images/dash_about.png" alt="dash" />Spend time in the
+					company of the best craftsmen</span
+				>
+				<h2>Services and Prices</h2>
+				<ul>
+					<li>
+						<span>Men's Haircut</span>
+						<span>from 300 UAH </span>
+					</li>
+					<li>
+						<span>Beard Trim</span>
+						<span>from 200 UAH</span>
+					</li>
+					<li>
+						<span>Mustache Trim</span>
+						<span>from 200 UAH</span>
+					</li>
+					<li>
+						<span>Straight Razor Shave</span>
+						<span>from 200 UAH</span>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<span>Trainee Haircut </span>
+						<span>from 50 UAH </span>
+					</li>
+					<li>
+						<span>Buzz Cut</span>
+						<span>from 200 UAH </span>
+					</li>
+					<li>
+						<span>Kids Haircut (&lsaquo;12 y.o.)</span>
+						<span>from 300 UAH </span>
+					</li>
+					<li>
+						<span>Gray Coverage</span>
+						<span>from 200 UAH </span>
+					</li>
+				</ul>
+				<button>Book a Service</button>
+			</section>
 
-      <section>
-        <span><img src="images/dash_about.png" alt="dash">Old School</span>
-          <h2>Why do they come to us?</h2>
-          <h3>
-            Only good things are said about us. But it is better to see and feel
-            1 time than to read 10 times.
-          </h3>
-        <ul>
-          <li>
-            <span>600</span>
-            <sup>+</sup>
-            <span>Satisfied Customers per Day</span>
-          </li>
-          <li>
-            <span>50</span>
-            <sup>+</sup>
-            <span>Excellent Service Awards</span>
-          </li>
-          <li>
-            <span>20</span>
-            <sup>+</sup>
-            <span>The Best Barbers of Kyiv</span>
-          </li>
-          <li>
-            <span>100</span>
-            <sup>+</sup>
-            <span>Gifts for Regular Customers</span>
-          </li>
-        </ul>
-      </section>
-      <section>
-        <span
-          ><img src="images/dash_about.png" alt="dash">for true connoisseurs
-          of the atmosphere</span
-        >
-        <h2>Our Barbers</h2>
-        <!--
-          Trebuie de adaugat fiecaruia linkuri catre social media
-        -->
-        <ul>
-          <li>
-            <img src="images/barber_john_smith.png" alt="John Smith">
-            <br >
-            <span>John Smith</span>
-            <br >
-            <em>Extreme Barber</em>
-          </li>
-          <li>
-            <img src="images/barber_michele_doe.png" alt="Michele Doe">
-            <br >
-            <span>Michele Doe</span>
-            <br >
-            <em>Extreme Barber</em>
-          </li>
-          <li>
-            <img src="images/barber_alan_black.png" alt="Alan Black">
-            <br >
-            <span>Alan Black</span>
-            <br>
-            <em>Extreme Barber</em>
-          </li>
-        </ul>
-      </section>
-      <section>
-       <h3><img src="images/dash_about.png" alt="dash">In Latin, "barba" means
-          "beard"</h3>
-        <ul>
-          <li>
-            <img
-              src="images/Frizer_tunde_cu_masina.png"
-              alt="Frizer tunde cu masina"
-            >
-          </li>
-          <li>
-            <img
-              src="images/Frizer_intinde_spuma_cu_pamatuful.png"
-              alt="Frizer intinde spuma cu pamatuful"
-            >
-          </li>
-          <li>
-            <img
-              src="images/Frizer_tine_prosop_pe_fata.png"
-              alt="Frizer tine prosop pe fata"
-            >
-          </li>
-          <li>
-            <img
-              src="images/Frizer_taie_cu_briciul.png"
-              alt="Frizer taie cu briciul"
-            >
-          </li>
-        </ul>
-      </section>
-      <!--Book a Service section-->
-      <section>
-        <h2>Book a service</h2>
-      </section>
+			<section>
+				<span><img src="images/dash_about.png" alt="dash" />Old School</span>
+				<h2>Why do they come to us?</h2>
+				<h3>
+					Only good things are said about us. But it is better to see and feel 1
+					time than to read 10 times.
+				</h3>
+				<ul>
+					<li>
+						<span>600</span>
+						<sup>+</sup>
+						<span>Satisfied Customers per Day</span>
+					</li>
+					<li>
+						<span>50</span>
+						<sup>+</sup>
+						<span>Excellent Service Awards</span>
+					</li>
+					<li>
+						<span>20</span>
+						<sup>+</sup>
+						<span>The Best Barbers of Kyiv</span>
+					</li>
+					<li>
+						<span>100</span>
+						<sup>+</sup>
+						<span>Gifts for Regular Customers</span>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<span
+					><img src="images/dash_about.png" alt="dash" />for true connoisseurs
+					of the atmosphere</span
+				>
+				<h2>Our Barbers</h2>
+				<ul>
+					<li>
+						<img src="images/barber_john_smith.png" alt="John Smith" />
+						<br />
+						<span>John Smith</span>
+						<br />
+						<em>Extreme Barber</em>
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/"
+									><img src="images/instagram.svg" alt="instagram"
+								/></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/"
+									><img src="images/twitter.svg" alt="twitter"
+								/></a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/"
+									><img src="images/facebook.svg" alt="facebook"
+								/></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/"
+									><img src="images/linkedin.svg" alt="linkedin"
+								/></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<img src="images/barber_michele_doe.png" alt="Michele Doe" />
+						<br />
+						<span>Michele Doe</span>
+						<br />
+						<em>Extreme Barber</em>
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/"
+									><img src="images/instagram.svg" alt="instagram"
+								/></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/"
+									><img src="images/twitter.svg" alt="twitter"
+								/></a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/"
+									><img src="images/facebook.svg" alt="facebook"
+								/></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/"
+									><img src="images/linkedin.svg" alt="linkedin"
+								/></a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<img src="images/barber_alan_black.png" alt="Alan Black" />
+						<br />
+						<span>Alan Black</span>
+						<br />
+						<em>Extreme Barber</em>
+						<ul>
+							<li>
+								<a href="https://www.instagram.com/"
+									><img src="images/instagram.svg" alt="instagram"
+								/></a>
+							</li>
+							<li>
+								<a href="https://twitter.com/"
+									><img src="images/twitter.svg" alt="twitter"
+								/></a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/"
+									><img src="images/facebook.svg" alt="facebook"
+								/></a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/"
+									><img src="images/linkedin.svg" alt="linkedin"
+								/></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h3>
+					<img src="images/dash_about.png" alt="dash" />In Latin, "barba" means
+					"beard"
+				</h3>
+				<ul>
+					<li>
+						<img
+							src="images/Frizer_tunde_cu_masina.png"
+							alt="Frizer tunde cu masina"
+						/>
+					</li>
+					<li>
+						<img
+							src="images/Frizer_intinde_spuma_cu_pamatuful.png"
+							alt="Frizer intinde spuma cu pamatuful"
+						/>
+					</li>
+					<li>
+						<img
+							src="images/Frizer_tine_prosop_pe_fata.png"
+							alt="Frizer tine prosop pe fata"
+						/>
+					</li>
+					<li>
+						<img
+							src="images/Frizer_taie_cu_briciul.png"
+							alt="Frizer taie cu briciul"
+						/>
+					</li>
+				</ul>
+			</section>
+			<!--Book a Service section-->
+			<section>
+				<h2>Book a service</h2>
+			</section>
 
-      <section>
-        <h2>Contacts</h2>
-        <address>
-          <img src="images/map_pin.png" alt="map pin">
-          <a
-            href="https://www.google.com/maps/contrib/107474142398722693912/photos/@50.3994067,30.4996602,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?entry=ttu"
-            >Main Street, 7A Kyiv, 08132</a
-          >
-          <br>
-          <img src="images/phone_pin.png" alt="phone pin">
-          <a href="tel:+380441111111">+38 044 111 11 11</a>
-          <br >
-          <img src="images/mail_pin.png" alt="mail pin">
-          <a href="mailto:barbershop@email.com">barbershop@email.com</a>
-        </address>
+			<section>
+				<h2>Contacts</h2>
+				<address>
+					<img src="images/map_pin.png" alt="map pin" />
+					<a
+						href="https://www.google.com/maps/contrib/107474142398722693912/photos/@50.3994067,30.4996602,12z/data=!3m1!4b1!4m3!8m2!3m1!1e1?entry=ttu"
+						>Main Street, 7A Kyiv, 08132</a
+					>
+					<br />
+					<img src="images/phone_pin.png" alt="phone pin" />
+					<a href="tel:+380441111111">+38 044 111 11 11</a>
+					<br />
+					<img src="images/mail_pin.png" alt="mail pin" />
+					<a href="mailto:barbershop@email.com">barbershop@email.com</a>
+				</address>
 
-        <span><img src="images/dash_about.png" alt="dash">Working hours</span>
-        <p>Daily from 9:00 AM till 22:00 PM</p>
-      </section>
-    </main>
-    <footer>
-      <span>&copy; Copyright 2022</span>
-     <div>
-      <span><img src="images/dash_about.png" alt="dash"></span>
-        <a
-          href="https://www.youtube.com/"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          >Youtube</a
-        >
-        <a
-          href="https://www.instagram.com/"
-          target="_blank"
-          rel="noopener noreferrer nofollow"
-          >Instagram</a
-        ></div>
-    </footer>
-  </body>
+				<span><img src="images/dash_about.png" alt="dash" />Working hours</span>
+				<p>Daily from 9:00 AM till 22:00 PM</p>
+			</section>
+		</main>
+		<footer>
+			<span>&copy; Copyright 2022</span>
+			<div>
+				<span><img src="images/dash_about.png" alt="dash" /></span>
+				<a
+					href="https://www.youtube.com/"
+					target="_blank"
+					rel="noopener noreferrer nofollow"
+					>Youtube</a
+				>
+				<a
+					href="https://www.instagram.com/"
+					target="_blank"
+					rel="noopener noreferrer nofollow"
+					>Instagram</a
+				>
+			</div>
+		</footer>
+	</body>
 </html>
