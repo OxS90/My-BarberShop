@@ -14,119 +14,187 @@
 		<link rel="stylesheet" href="css/styles.css" />
 	</head>
 	<body>
-		<header class="global-header">
-			<section class="left-section">
+		<div class="container header-container">
+			<aside class="left-section">
 				<a href="index.html">
-					<!--De adaugat valori dimensiuni pentru imagini-->
 					<img src="images/logo.svg" alt="Barbershop logo" />
 				</a>
-				<div>
-					<a
-						href="https://www.youtube.com/"
-						target="_blank"
-						rel="noopener noreferrer nofollow"
-						>Youtube</a
-					>
-					<a
-						href="https://www.instagram.com/"
-						target="_blank"
-						rel="noopener noreferrer nofollow"
-						class="active"
-						>Instagram</a
-					>
-					<img src="images/dash_navigation_links.png" alt="link separator" />
-				</div>
-			</section>
-			<nav class="main-navigation">
-				<ul>
-					<li><a href="about.html" class="active">About</a></li>
-					<li><a href="servicesandprices.html">Services and Prices</a></li>
-					<li><a href="barbers.html">Barbers</a></li>
-					<li><a href="contacts.html">Contacts</a></li>
+				<ul class="social-links">
+					<li>
+						<svg class="dash">
+							<use
+								href="./images/icons.svg/symbol-defs.svg#icon-rectangle"
+							></use>
+						</svg>
+					</li>
+					<li>
+						<a
+							href="https://www.instagram.com/"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							class="active"
+							>Instagram</a
+						>
+					</li>
+					<li>
+						<a
+							href="https://www.youtube.com/"
+							target="_blank"
+							rel="noopener noreferrer nofollow"
+							>Youtube</a
+						>
+					</li>
 				</ul>
-        <a href="tel:+380441111111">+38 044 111 11 11</a>
-			<button class="button">Book a Service</button>
-			</nav>
-		</header>
+			</aside>
+			<div class="header-hero-container">
+				<header class="global-header">
+					<!-- de vazut cu distanta intre elemente -->
+					<nav class="main-navigation">
+						<ul class="pages-list">
+							<li><a href="about.html" class="active">About</a></li>
+							<li><a href="servicesandprices.html">Services and Prices</a></li>
+							<li><a href="barbers.html">Barbers</a></li>
+							<li><a href="contacts.html">Contacts</a></li>
+						</ul>
+						<ul class="pages-list">
+							<li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
+							<li><button class="button">Book a Service</button></li>
+						</ul>
+					</nav>
+				</header>
+				<section>
+					<div class="hero-section">
+						<div class="heading-intro">
+							<svg class="dash">
+								<use
+									href="./images/icons.svg/symbol-defs.svg#icon-rectangle"
+								></use>
+							</svg>
+							<span>A hair salon for men in Kyiv</span>
+						</div>
+						<h1 title="BarberShop" class="hero-heading">BarberShop</h1>
+						<p class="p-description">
+							We are experts in trendy men&apos;s haircuts.<br />
+							We work quickly,carefully, and tastefully.
+						</p>
+					</div>
+					<!-- slider navigation -->
+					<div class="control-buttons">
+						<div class="hero-nav-back-btn">
+							<button class="nav-btn">Back</button>
+							<svg class="dash">
+								<use
+									href="./images/icons.svg/symbol-defs.svg#icon-rectangle"
+								></use>
+							</svg>
+						</div>
+						<div class="hero-nav-next-btn">
+							<button class="nav-btn">Next</button>
+							<svg class="dash">
+								<use
+									href="./images/icons.svg/symbol-defs.svg#icon-rectangle"
+								></use>
+							</svg>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
 		<main>
-			<section class="hero-section">
-				<hr />
-				<span> A hair salon for men in Kyiv </span>
-				<h1 title="BarberShop" class="hero-heading">BarberShop</h1>
-				<p>
-					We are experts in trendy men&apos;s haircuts. We work quickly,
-					carefully, and tastefully.
-				</p>
-				<!--Trebuie de adaugat Back si Next-->
-			</section>
-			<section>
+			<section class="container content about-content">
 				<img
 					src="images/barber-img-1.png"
 					alt="Frizer taie cu masina de tuns"
+					width="270px"
+					height="445px"
 				/>
-				<img src="images/barber-img-2.png" alt="Frizer taie cu lama" />
-				<span><img src="images/dash_about.png" alt="dash" />About</span>
-				<h2>The Best Barbershop in Your City</h2>
-				<h3>
-					If you want to add more confidence to your image, you are definitely
-					in the right place.
-				</h3>
-				<p>
-					We are a team that never rests on its laurels and yearns for change.
-					And once you fall into the hands of our master, you will never be the
-					same again. We are a team that is always on the same wavelength with
-					clients. Therefore, we are always ready to improve everyone who comes
-					to us!
-				</p>
-				<button>Book a service</button>
+				<img
+					src="images/barber-img-2.png"
+					alt="Frizer taie cu lama"
+					width="270px"
+					height="445px"
+				/>
+				<div class="about-section">
+					<div class="heading-intro">
+						<svg class="dash">
+							<use
+								href="./images/icons.svg/symbol-defs.svg#icon-rectangle"
+							></use>
+						</svg>
+						<span>About</span>
+					</div>
+					<h2 class="general-heading">The Best Barbershop in Your City</h2>
+					<p class="p-description">
+						If you want to add more confidence to your image, you are definitely
+						in the right place.
+					</p>
+					<p class="p-text">
+						We are a team that never rests on its laurels and yearns for
+						change.<br />
+						And once you fall into the hands of our master, you will never be
+						the same again. We are a team that is always on the same wavelength
+						with clients. Therefore, we are always ready to improve everyone who
+						comes to us!
+					</p>
+					<button class="button">Book a service</button>
+				</div>
 			</section>
-			<section>
-				<span
-					><img src="images/dash_about.png" alt="dash" />Spend time in the
-					company of the best craftsmen</span
-				>
-				<h2>Services and Prices</h2>
-				<ul>
-					<li>
-						<span>Men's Haircut</span>
-						<span>from 300 UAH </span>
-					</li>
-					<li>
-						<span>Beard Trim</span>
-						<span>from 200 UAH</span>
-					</li>
-					<li>
-						<span>Mustache Trim</span>
-						<span>from 200 UAH</span>
-					</li>
-					<li>
-						<span>Straight Razor Shave</span>
-						<span>from 200 UAH</span>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<span>Trainee Haircut </span>
-						<span>from 50 UAH </span>
-					</li>
-					<li>
-						<span>Buzz Cut</span>
-						<span>from 200 UAH </span>
-					</li>
-					<li>
-						<span>Kids Haircut (&lsaquo;12 y.o.)</span>
-						<span>from 300 UAH </span>
-					</li>
-					<li>
-						<span>Gray Coverage</span>
-						<span>from 200 UAH </span>
-					</li>
-				</ul>
-				<button>Book a Service</button>
+			<section class="container content services-prices-container">
+				<div class="heading-intro">
+					<svg class="dash">
+						<use href="./images/icons.svg/symbol-defs.svg#icon-rectangle"></use>
+					</svg>
+					<span>Spend time in the company of the best craftsmen</span>
+				</div>
+				<h2 class="general-heading">Services and Prices</h2>
+				<div class="services-prices-list">
+					<ul class="list">
+						<li class="item">
+							<span class="service">Men's Haircut</span>
+							<span class="price">from 300 UAH </span>
+						</li>
+						<li>
+							<span>Beard Trim</span>
+							<span>from 200 UAH</span>
+						</li>
+						<li>
+							<span>Mustache Trim</span>
+							<span>from 200 UAH</span>
+						</li>
+						<li>
+							<span>Straight Razor Shave</span>
+							<span>from 200 UAH</span>
+						</li>
+					</ul>
+					<ul class="list">
+						<li>
+							<span>Trainee Haircut </span>
+							<span>from 50 UAH </span>
+						</li>
+						<li>
+							<span>Buzz Cut</span>
+							<span>from 200 UAH </span>
+						</li>
+						<li>
+							<span>Kids Haircut (&lsaquo;12 y.o.)</span>
+							<span>from 300 UAH </span>
+						</li>
+						<li>
+							<span>Gray Coverage</span>
+							<span>from 200 UAH </span>
+						</li>
+					</ul>
+				</div>
+				<button class="button">Book a Service</button>
 			</section>
 
 			<section>
-				<span><img src="images/dash_about.png" alt="dash" />Old School</span>
+				<div class="heading-intro">
+					<svg class="dash">
+						<use href="./images/icons.svg/symbol-defs.svg#icon-rectangle"></use>
+					</svg>
+					<span>Old School</span>
+				</div>
 				<h2>Why do they come to us?</h2>
 				<h3>
 					Only good things are said about us. But it is better to see and feel 1
@@ -156,10 +224,12 @@
 				</ul>
 			</section>
 			<section>
-				<span
-					><img src="images/dash_about.png" alt="dash" />for true connoisseurs
-					of the atmosphere</span
-				>
+				<div class="heading-intro">
+					<svg class="dash">
+						<use href="./images/icons.svg/symbol-defs.svg#icon-rectangle"></use>
+					</svg>
+					<span>for true connoisseurs of the atmosphere</span>
+				</div>
 				<h2>Our Barbers</h2>
 				<ul>
 					<li>
@@ -252,10 +322,12 @@
 				</ul>
 			</section>
 			<section>
-				<h3>
-					<img src="images/dash_about.png" alt="dash" />In Latin, "barba" means
-					"beard"
-				</h3>
+				<div class="heading-intro">
+					<svg class="dash">
+						<use href="./images/icons.svg/symbol-defs.svg#icon-rectangle"></use>
+					</svg>
+					<span>In Latin, "barba" means "beard"</span>
+				</div>
 				<ul>
 					<li>
 						<img
@@ -311,7 +383,9 @@
 		<footer>
 			<span>&copy; Copyright 2022</span>
 			<div>
-				<span><img src="images/dash_about.png" alt="dash" /></span>
+				<svg class="dash">
+					<use href="./images/icons.svg/symbol-defs.svg#icon-rectangle"></use>
+				</svg>
 				<a
 					href="https://www.youtube.com/"
 					target="_blank"
